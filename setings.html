@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Настройки</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- JQuery -->
+    <script src="js/jquery-3.2.1.js"></script>
+
+    <!-- Bootstrap Core JS -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Custom CSS -->
+    <link href="css/styles.css" rel="stylesheet">
+
+    <!-- Font-Awesome CSS -->
+    <link href="css/font-awesome.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div id="wrapper">
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="#">
+                        <img src="images/logo.png" alt="rb" width="70" height="70">
+                    </a>
+                </li>
+                <li>
+                    <a href="employees.html" id="nav-employees"><i class="fa fa-group" style="font-size:36px"></i></a>
+                </li>
+                <li>
+                    <a href="tasks.html" id="nav-tasks"><span class="glyphicon glyphicon-tasks" aria-hidden="true" title="Задачи"></span></a>
+                </li>
+                <li>
+                    <a href="setings.html" id="nav-setings"><span class="glyphicon glyphicon-cog" aria-hidden="true" title="Настройки"></span></a>
+                </li>
+                <li>
+                    <a href="login.html">
+                        <span class="glyphicon glyphicon-log-out" title="Изход"></span>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid" id="task">
+                <div class="row" style="margin-top: 30px;">
+                    <div class="buttons-employee-form">
+                        <a href="#" class="btn info"><i class="fa fa-edit" style="font-size:20px"></i> РЕДАКЦИЯ</a>
+                        <a href="tasks.html" class="btn default"><i class="fa fa-close" style="font-size:20px"></i> ОТКАЗ</a>
+                    </div>
+                    <hr>
+                    <h2 style="margin-bottom: 20px; margin-top: 5px;">Настройки</h2>
+                    <form class="form-horizontal" action="/action_page.php">
+                        <div class="form-group">
+                            <label class="control-label col-sm-2" for="email">Име на служител</label>
+                            <div class="col-sm-10">
+                                <span class="input-text"><a href="employee-profile.html">Мария Иванова Колева</a></span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-2" for="email">Отдел</label>
+                            <div class="col-sm-10">
+                                <span class="input-text">Разработка на софтуер</span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-2" for="email">Позиция</label>
+                            <div class="col-sm-10">
+                                <span class="input-text">Junior Java Developer</span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-2" for="email">Мениджър</label>
+                            <div class="col-sm-10">
+                                <span class="input-text"><a href="#">Димитър Русинов Манолов</a></span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-2" for="email">Месечно възнаграждение</label>
+                            <div class="col-sm-10">
+                                <span class="input-text">2000.00</span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-2" for="email">Започнал/а работа на</label>
+                            <div class="col-sm-10">
+                                <span class="input-text">10.09.2010</span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-2" for="email">Статус</label>
+                            <div class="col-sm-10">
+                                <span class="input-text">Работещ</span>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        // make nav active
+        $('#nav-setings').addClass('active-nav');
+    </script>
+</body>
+
+</html>

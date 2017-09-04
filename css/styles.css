@@ -1,0 +1,222 @@
+body {
+    overflow-x: hidden;
+ }
+
+/* Toggle Styles */
+
+#page-content-wrapper {
+    padding-left: 110px;
+    padding-right: 20px;
+}
+
+#sidebar-wrapper {
+    position: fixed;
+    left: 0px;
+    width: 83px;
+    height: 100%;
+    background: #5b7dc1;
+	border-right: 1px solid lightgrey;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+/* ---------- NAVBAR (START) ----------- */
+
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    height: 100%;
+}
+
+.sidebar-nav li {
+    line-height: 40px;
+}
+
+.sidebar-nav li a {
+    display: block;
+	width: 82px;
+    text-decoration: none;
+    color: white;
+	padding: 10px 0 0 21px;
+	
+}
+
+.sidebar-nav li a:hover,
+.active-nav {
+    text-decoration: none;
+    color: #fff;
+    background: rgba(22,22,22,0.1);
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+    height: 100px;
+	margin-left: -13px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+    color: #999999;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+    color: #fff;
+    background: none;
+}
+
+.glyphicon {
+	font-size: 2.5em;
+}
+
+li a span.glyphicon {
+	padding-left: 2px;
+}
+
+ul.sidebar-nav li:last-child {
+    display: inline-block; 
+    position: absolute; 
+    bottom: 5px; 
+}
+
+/* ---------- NAVBAR (END) ----------- */
+
+/* ---------- BUTTONS (START) ----------- */
+
+.btn {
+    border: none;
+    color: white;
+    padding: 12px 26px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 2px !important;
+}
+
+.btn:hover {
+    color: white;
+}
+
+.success {background-color: #4CAF50;} /* Green */
+.success:hover {background-color: #46a049;}
+
+.info {background-color: #5b7dc1;} /* Blue */
+.info:hover {background: #175F9A;}
+
+.warning {background-color: #ff9800;} /* Orange */
+.warning:hover {background: #e68a00;}
+
+.danger {background-color: #f44336;} /* Red */ 
+.danger:hover {background: #da190b;}
+
+.default {background-color: #e7e7e7; color: black;} /* Gray */ 
+.default:hover {background: #ddd;}
+
+/* ---------- BUTTONS (END) ----------- */
+
+/* ---------- ALL EMPLOYEES (START) ---------- */
+#all-employees input[type=text],
+#all-tasks input[type=text] {
+    width: 50%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('search-icon.png');
+    background-size: 23px 23px;
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+#all-employees form,
+#all-tasks form,
+#login form {
+    margin-top: 30px;
+}
+
+#all-employees form a,
+#all-tasks form a {
+    border-radius: 3px !important;
+    font-weight: bold;
+    float: right;
+    margin-top: 0px;
+    margin-right: 10px;
+}
+
+#all-employees table,
+#all-tasks table {
+    margin-top: 30px;
+    font-size: 16px;
+}
+
+#all-employees table th,
+#all-tasks table th {
+    font-weight: bold !important;
+}
+
+table tr:hover {
+    background: rgba(0,0,255,0.1) !important;
+}
+/* ---------- ALL EMPLOYEES (END) ---------- */
+
+/* ---------- NEW EMPLOYEE (START) ---------- */
+
+#new-employee .row {
+    margin-top: 20px;
+}
+
+#new-employee input[type=file] {
+    margin-top: 10px;
+}
+
+#new-employee .form-horizontal .control-label,
+#task .control-label {
+    text-align: left !important;
+    color: #615E5E;
+    font-size: 15px;
+}
+
+#new-employee .buttons-employee-form {
+    margin-bottom: 20px;
+    padding-left: 30px;
+}
+
+ul.nav-tabs a {
+    font-size: 16px;
+}
+
+/* ---------- NEW EMPLOYEE (END) ---------- */
+
+/* ---------- LOGIN (START) ---------- */
+
+#login form a {
+    padding: 8px 25px !important;
+}
+
+/* ---------- LOGIN (END) ---------- */
+
+/* ---------- EMPLOYEE (START) ---------- */
+
+#employee-info .input-text,
+#task .input-text {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 6px;
+}
+
+/* ---------- EMPLOYEE (END) ---------- */
+
+
+
+
+
+

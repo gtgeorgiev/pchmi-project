@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Нов служител</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font-Awesome CSS -->
+    <link href="css/font-awesome.css" rel="stylesheet">
+
+    <!-- JQuery -->
+    <script src="js/jquery-3.2.1.js"></script>
+
+    <!-- Select2 CSS -->
+    <link href="css/select2.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/styles.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="#">
+                        <img src="images/logo.png" alt="rb" width="70" height="70">
+                    </a>
+                </li>
+                <li>
+                    <a href="employees.html" id="nav-employees"><i class="fa fa-group" style="font-size:36px"></i></a>
+                </li>
+                <li>
+                    <a href="tasks.html" id="nav-tasks"><span class="glyphicon glyphicon-tasks" aria-hidden="true" title="Задачи"></span></a>
+                </li>
+                <li>
+                    <a href="setings.html" id="nav-setings"><span class="glyphicon glyphicon-cog" aria-hidden="true" title="Настройки"></span></a>
+                </li>
+                <li>
+                    <a href="login.html">
+                        <span class="glyphicon glyphicon-log-out" title="Изход"></span>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid" id="new-employee">
+                <div class="row">
+                    <div class="buttons-employee-form">
+                        <a href="#" class="btn info"><i class="fa fa-save" style="font-size:20px"></i> ЗАПАЗИ</a>
+                        <a href="employees.html" class="btn default"><i class="fa fa-close" style="font-size:20px"></i> ОТКАЗ</a>
+                    </div>
+                    <hr>
+                    <div class="col-md-12" id="basic-employee-info">
+                        <form class="form-horizontal">
+                            <div class="col-md-3">
+                                <img src="images/no-img.png" class="img-thumbnail" alt="Cinque Terre" width="250" height="250">
+                                <input type="file" />
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label class="control-label col-sm-3" for="name">Име</label>
+                                    <div class="col-sm-9">
+                                        <input type="text" class="form-control" id="name" placeholder="Име" name="name">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label col-sm-3" for="surname">Презиме</label>
+                                    <div class="col-sm-9">
+                                        <input type="text" class="form-control" id="surname" placeholder="Презиме" name="surname">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label col-sm-3" for="lastname">Фамилия</label>
+                                    <div class="col-sm-9">
+                                        <input type="text" class="form-control" id="lastname" placeholder="Фамилия" name="lastname">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label col-sm-3" for="position">Позиция</label>
+                                    <div class="col-sm-9">
+                                        <input type="text" class="form-control" id="position" placeholder="Позиция" name="position">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label col-sm-3" for="department">Отдел</label>
+                                    <div class="col-sm-9">
+                                        <select class="js-example-basic-single" style="width: 100%;">
+                                            <option value="Финанси">Финанси</option>
+                                            <option value="Човешки ресурси">Човешки ресурси</option>
+                                            <option value="Разработка на софтуер">Разработка на софтуер</option>
+                                            <option value="Съпорт">Съпорт</option>
+                                            <option value="Мениджмънт">Мениджмънт</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label class="control-label col-sm-3" for="manager">Ръководтел</label>
+                                    <div class="col-sm-9">
+                                        <input type="text" class="form-control" id="manager" placeholder="Ръководтел" name="manager">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label col-sm-3" for="age">Години</label>
+                                    <div class="col-sm-9">
+                                        <input type="text" class="form-control" id="age" placeholder="Години" name="age">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label col-sm-3" for="interests">Интереси</label>
+                                    <div class="col-sm-9">
+                                        <select class="js-example-basic-multiple" multiple="multiple" style="width: 100%;">
+                                            <option value="Физика">Физика</option>
+                                            <option value="Математика">Математика</option>
+                                            <option value="Шах">Шах</option>
+                                            <option value="Опера">Опера</option>
+                                            <option value="Балет">Балет</option>
+                                            <option value="Джаз">Джаз</option>
+                                            <option value="Програмиране">Програмиране</option>
+                                            <option value="Изкуство">Изкуство</option>
+                                            <option value="Ядрена физика">Ядрена физика</option>
+                                            <option value="Танци">Танци</option>
+                                            <option value="Рисуване">Рисуване</option>
+                                            <option value="Хазарт">Хазарт</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label col-sm-3" for="email">E-mail</label>
+                                    <div class="col-sm-9">
+                                        <input type="email" class="form-control" id="email" placeholder="Email" name="email">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label col-sm-3" for="password">Парола</label>
+                                    <div class="col-sm-9">
+                                        <input type="email" class="form-control" id="password" placeholder="Парола" name="password">
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $(".js-example-basic-multiple, js-example-basic-single").select2({
+                placeholder: "Интереси",
+                allowClear: true
+            });
+
+            $(".js-example-basic-single").select2();
+        });
+    </script>
+
+    <!-- Bootstrap Core JS -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Select2 JS -->
+    <script src="js/select2.full.min.js"></script>
+    <script src="js/i18n/bg.js"></script>
+</body>
+
+</html>

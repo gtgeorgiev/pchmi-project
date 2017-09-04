@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Профил</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/styles.css" rel="stylesheet">
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- JQuery -->
+    <script src="js/jquery-3.2.1.js"></script>
+
+    <!-- Bootstrap Core JS -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Custom CSS -->
+    <link href="css/styles.css" rel="stylesheet">
+
+    <!-- Font-Awesome CSS -->
+    <link href="css/font-awesome.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="#">
+                        <img src="images/logo.png" alt="rb" width="70" height="70">
+                    </a>
+                </li>
+                <li>
+                    <a href="employees.html" id="nav-employees"><i class="fa fa-group" style="font-size:36px"></i></a>
+                </li>
+                <li>
+                    <a href="tasks.html" id="nav-tasks"><span class="glyphicon glyphicon-tasks" aria-hidden="true" title="Задачи"></span></a>
+                </li>
+                <li>
+                    <a href="setings.html" id="nav-setings"><span class="glyphicon glyphicon-cog" aria-hidden="true" title="Настройки"></span></a>
+                </li>
+                <li>
+                    <a href="login.html">
+                        <span class="glyphicon glyphicon-log-out" title="Изход"></span>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid" id="new-employee">
+                <div class="row">
+                    <div class="buttons-employee-form">
+                        <a href="#" class="btn info"><i class="fa fa-edit" style="font-size:20px"></i> РЕДАКЦИЯ</a>
+                        <a href="employees.html" class="btn default"><i class="fa fa-close" style="font-size:20px"></i> ОТКАЗ</a>
+                    </div>
+                    <hr>
+                    <div class="col-md-12" id="employee-info">
+                        <form class="form-horizontal">
+                            <div class="col-md-3">
+                                <img src="images/profile-image.jpg" class="img-thumbnail" alt="Cinque Terre" width="180" height="300">
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label class="control-label col-sm-3" for="name">Име</label>
+                                    <div class="col-sm-9">
+                                        <span class="input-text">Мария</span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label col-sm-3" for="surname">Презиме</label>
+                                    <div class="col-sm-9">
+                                        <span class="input-text">Иванова</span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label col-sm-3" for="lastname">Фамилия</label>
+                                    <div class="col-sm-9">
+                                        <span class="input-text">Колева</span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label col-sm-3" for="position">Позиция</label>
+                                    <div class="col-sm-9">
+                                        <span class="input-text">Junior Java Developer</span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label col-sm-3" for="department">Отдел</label>
+                                    <div class="col-sm-9">
+                                        <span class="input-text">Разработка на софтуер</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label class="control-label col-sm-3" for="manager">Ръководтел</label>
+                                    <div class="col-sm-9">
+                                        <span class="input-text"><a href="#"> Димитър Русинов Манолов </a></span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label col-sm-3" for="age">Години</label>
+                                    <div class="col-sm-9">
+                                        <span class="input-text">26</span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label col-sm-3" for="interests">Интереси</label>
+                                    <div class="col-sm-9">
+                                        <span class="input-text">Програмиране, Ядрена физика, Математика</span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label col-sm-3" for="email">E-mail</label>
+                                    <div class="col-sm-9">
+                                        <span class="input-text">maria.koleva@gmail.com</span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label col-sm-3" for="password">Парола</label>
+                                    <div class="col-sm-9">
+                                        <span class="input-text">12345</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="row" style="padding-left: 20px;">
+                        <div class="col-md-12">
+                            <hr>
+                            <h2 style="margin-bottom: 25px;">Задачи</h2>
+                            <ul class="nav nav-tabs">
+                                <li class="active"><a data-toggle="tab" href="#menu1">Нови</a></li>
+                                <li><a data-toggle="tab" href="#menu2">Започнати</a></li>
+                                <li><a data-toggle="tab" href="#menu3">Завършени</a></li>
+                            </ul>
+
+                            <div class="tab-content">
+                                <div id="menu1" class="tab-pane fade in active">
+                                    <table class="table table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th></th>
+                                                <th>Номер</th>
+                                                <th>Притежател</th>
+                                                <th>Кратко описание</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><img src="images/new.png" alt="checkmark" width="50px" height="25px"></td>
+                                                <td><a href="#">Task 11846</a></td>
+                                                <td>Мария Иванова Колева</td>
+                                                <td>Mollit incididunt enim consectetur tempor et elit nisi commodo non ex.</td>
+                                            </tr>
+                                            <tr>
+                                                <td><img src="images/new.png" alt="checkmark" width="50px" height="25px"></td>
+                                                <td><a href="#">Task 58962</a></td>
+                                                <td>Мария Иванова Колева</td>
+                                                <td>Id eiusmod nostrud amet veniam ex officia sunt irure incididunt.</td>
+                                            </tr>
+                                            <tr>
+                                                <td><img src="images/new.png" alt="checkmark" width="50px" height="25px"></td>
+                                                <td><a href="#">Task 47584</a></td>
+                                                <td>Мария Иванова Колева</td>
+                                                <td>Voluptate excepteur ea ea in proident eiusmod enim Lorem incididunt voluptate quis.</td>
+                                            </tr>
+                                            <tr>
+                                                <td><img src="images/new.png" alt="checkmark" width="50px" height="25px"></td>
+                                                <td><a href="#">Task 47554</a></td>
+                                                <td>Мария Иванова Колева</td>
+                                                <td>Minim consectetur labore nulla veniam consequat ipsum culpa.</td>
+                                            </tr>
+                                            <tr>
+                                                <td><img src="images/new.png" alt="checkmark" width="50px" height="25px"></td>
+                                                <td><a href="#">Task 47554</a></td>
+                                                <td>Мария Иванова Колева</td>
+                                                <td>Magna consequat in consectetur adipisicing eiusmod officia est irure nulla laborum quis reprehenderit.</td>
+                                            </tr>
+                                            <tr>
+                                                <td><img src="images/new.png" alt="checkmark" width="50px" height="25px"></td>
+                                                <td><a href="#">Task 32156</a></td>
+                                                <td>Мария Иванова Колева</td>
+                                                <td>Elit et fugiat et in amet elit dolore esse quis amet minim exercitation.</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div id="menu2" class="tab-pane fade">
+                                    <table class="table table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th></th>
+                                                <th>Номер</th>
+                                                <th>Възложена на</th>
+                                                <th>Кратко описание</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><img src="images/checkmark.png" alt="checkmark" width="25px" height="25px"></td>
+                                                <td><a href="#">Task 11846</a></td>
+                                                <td>Мария Иванова Колева</td>
+                                                <td>Mollit incididunt enim consectetur tempor et elit nisi commodo non ex.</td>
+                                            </tr>
+                                            <tr>
+                                                <td><img src="images/checkmark.png" alt="checkmark" width="25px" height="25px"></td>
+                                                <td><a href="#">Task 58962</a></td>
+                                                <td>Мария Иванова Колева</td>
+                                                <td>Id eiusmod nostrud amet veniam ex officia sunt irure incididunt.</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div id="menu3" class="tab-pane fade">
+                                    <table class="table table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th></th>
+                                                <th>Номер</th>
+                                                <th>Възложена на</th>
+                                                <th>Кратко описание</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><img src="images/x.png" alt="x" width="25px" height="25px"></td>
+                                                <td><a href="#">Task 11846</a></td>
+                                                <td>Мария Иванова Колева</td>
+                                                <td>Mollit incididunt enim consectetur tempor et elit nisi commodo non ex.</td>
+                                            </tr>
+                                            <tr>
+                                                <td><img src="images/x.png" alt="x" width="25px" height="25px"></td>
+                                                <td><a href="#">Task 58962</a></td>
+                                                <td>Мария Иванова Колева</td>
+                                                <td>Id eiusmod nostrud amet veniam ex officia sunt irure incididunt.</td>
+                                            </tr>
+                                            <tr>
+                                                <td><img src="images/x.png" alt="x" width="25px" height="25px"></td>
+                                                <td><a href="#">Task 47584</a></td>
+                                                <td>Мария Иванова Колева</td>
+                                                <td>Voluptate excepteur ea ea in proident eiusmod enim Lorem incididunt voluptate quis.</td>
+                                            </tr>
+                                            <tr>
+                                                <td><img src="images/x.png" alt="x" width="25px" height="25px"></td>
+                                                <td><a href="#">Task 47554</a></td>
+                                                <td>Мария Иванова Колева</td>
+                                                <td>Minim consectetur labore nulla veniam consequat ipsum culpa.</td>
+                                            </tr>
+                                            <tr>
+                                                <td><img src="images/x.png" alt="x" width="25px" height="25px"></td>
+                                                <td><a href="#">Task 47554</a></td>
+                                                <td>Мария Иванова Колева</td>
+                                                <td>Magna consequat in consectetur adipisicing eiusmod officia est irure nulla laborum quis reprehenderit.</td>
+                                            </tr>
+                                            <tr>
+                                                <td><img src="images/x.png" alt="x" width="25px" height="25px"></td>
+                                                <td><a href="#">Task 32156</a></td>
+                                                <td>Мария Иванова Колева</td>
+                                                <td>Elit et fugiat et in amet elit dolore esse quis amet minim exercitation.</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+    <script>
+        // make nav active
+        $('#nav-employees').addClass('active-nav');
+    </script>
+</body>
+
+</html>
